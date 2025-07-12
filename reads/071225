@@ -1,0 +1,61 @@
+NAVBAR objectives
+1.acounting
+2.scheduling
+3.meeting recordings
+4.doodling wall, paint
+5.USER PROFILE
+
+ACCOUNTING objectives
+1.BUTTONS FOR INCOME INVEST EXPENSE SAVING
+2.DASHBOARD FOR INCOME INVEST EXPENSE SAVING
+3.TRANSACTION LIST WITH DELETE AND EDIT OPTIONS
+4.FORECAST OF GOLD PRICES, INVESTMENT, EXPENSES
+
+button function updates three tables - specific category, transaction, DASHBOARD
+
+button objectives
+INCOME userid transid source creditto amount date cmt 
+INVEST mutualfund gold fixeddeposit longtermbond 
+Gold - userid source amount date marketrate qty cmt 
+mf - userid source amount date marketrate qty cmt
+fd - userid source amount date interest duration-year/month/days
+bond - userid source amount date interest duration-year/month 
+EXPENSE food gas rent bike education projects travel attire electronics health misc  
+userid source creditto amount date cmt priority
+SAVING userid transid source creditto amount date cmt 
+
+
+TRANSACTION
+userid source creditto amount date cmt type
+
+scheduling objectives
+1.LIST OF TASKS AND COMPLEXITY
+name complexity priority cmt 
+2.CALENDAR 
+monthly/weekly
+3.MONTLY REPORT LIST - ADD, UPDATE, DELETE
+
+MEETING scheduling
+1.LOGGING VIDEO MECHANISM TO SAVE
+2.TRANSCRIPT GENERATION
+3.LOGG OF VIDEOS AND REVIEW
+
+DOODLING WALL, paint objectives
+1.OPTION TO DDODLE
+2.TOOLS - PEN, ERASER, COLOR, MARKER
+3.SAVE AND UPDATE ON EACH TILE
+4.DELETE AND REVIEW TILE LIST
+
+USER PROFILE objectives
+1.USER PROFILE VIEW
+2.EDITS
+3.UPDATES
+
+STEPS
+. LOGIN/REGISTER ROUTING TO LANDING PAGE - TEST DEPLOYMENT
+. MAKE ACCOUNTS
+.
+
+
+
+

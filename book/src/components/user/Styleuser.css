@@ -1,0 +1,61 @@
+.loginStyle,
+.registerStyle {
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    max-height: 350px;
+    margin: 40px auto;
+    padding: 32px 24px;
+    background: #f9f9fb;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    gap: 18px;
+    border: 1px solid #e0e0e0;
+}
+
+.loginStyle input,
+.registerStyle input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.loginStyle button,
+.registerStyle button {
+    padding: 12px;
+    border-radius: 8px;
+    background: #4f8cff;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.loginStyle button:hover,
+.registerStyle button:hover {
+    background: #2563eb;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 0px;
+    right: 16px;
+    width: 32px;
+    height: 32px;
+    border: none;
+    
+    font-size: 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+    transition: background 0.2s;
+}
+.closeBtn:hover {
+    background: #f0f0f0;
+}
+.loginStyle, .registerStyle {
+    position: relative;
+    /* ...existing styles... */
+}

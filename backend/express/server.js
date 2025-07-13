@@ -3,6 +3,7 @@ const app = express();
 const cors = require('cors');
 const mongoose = require('mongoose');
 require('dotenv').config();
+const PORT = process.env.PORT || 4500;
 
 
 app.use(cors());
@@ -21,6 +22,6 @@ app.use(`/${process.env.apiKeyWebapp}/user`, require('./routes/user/User'));
 
 
 
-app.listen(4500, () => {
-    console.log('Server is running on port 4500');
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });

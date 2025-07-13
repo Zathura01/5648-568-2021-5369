@@ -5,6 +5,9 @@ import { useFormContext } from '../context/UserFormContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 const apiKey = process.env.REACT_APP_API_KEY;
+const apiUrl = process.env.REACT_APP_API_URL
+
+
 
 function Login() {
 
@@ -18,7 +21,7 @@ function Login() {
             userName: userName.value,
             password: password.value
         }
-        const data = await fetch(`http://localhost:4500/${apiKey}/user/login`, {
+        const data = await fetch(`${apiUrl}/${apiKey}/user/login`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

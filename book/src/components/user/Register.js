@@ -1,15 +1,16 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import './Styleuser.css'
 import InputHook from '../hooks/InputHook'
 import { useFormContext } from '../context/UserFormContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 const apiKey = process.env.REACT_APP_API_KEY;
-
+const apiUrl = process.env.REACT_APP_API_URL
 
 
 function Register() {
-
+    const navigate = useNavigate();
     const userName = InputHook('');
     const password = InputHook('');
     const email = InputHook('');
@@ -23,7 +24,7 @@ function Register() {
             email: email.value
         }
 
-        const data = await fetch(`http://localhost:4500/${apiKey}/user/register`, {
+        const data = await fetch(`${apiUrl}/${apiKey}/user/register`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -33,6 +34,7 @@ function Register() {
         const result = await data.json();
         if (result.success) {   
             alert('Registration successful');
+            navigate('/home');
             useFormCtx.setShowForm({ showLog: false, showReg: false, show: false });
         } else {
             alert('Registration failed: ' + result.message);

@@ -1,9 +1,11 @@
 .loginStyle,
+.usernameStyle,
+.OTPStyle,
 .registerStyle {
     display: flex;
     flex-direction: column;
     max-width: 40%;
-    max-height: 350px;
+    max-height: fit-content;
     margin: 40px auto;
     padding: 32px 24px;
     background: #f9f9fb;
@@ -14,6 +16,8 @@
 }
 
 .loginStyle input,
+.usernameStyle input,
+.OTPStyle input,
 .registerStyle input {
     padding: 10px;
     border-radius: 8px;
@@ -22,6 +26,8 @@
 }
 
 .loginStyle button,
+.usernameStyle button,
+.OTPStyle button,
 .registerStyle button {
     padding: 12px;
     border-radius: 8px;
@@ -34,6 +40,8 @@
 }
 
 .loginStyle button:hover,
+.usernameStyle button:hover,
+.OTPStyle button:hover,
 .registerStyle button:hover {
     background: #2563eb;
 }

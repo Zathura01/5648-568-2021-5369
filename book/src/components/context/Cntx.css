@@ -1,0 +1,36 @@
+/* Add to App.css or a global CSS file */
+.custom-alert {
+  position: fixed;
+  top: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 280px;
+  max-width: 90vw;
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #fff;
+  z-index: 9999;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  animation: fadeInOut 3s forwards;
+}
+
+.custom-alert-success {
+  background: #22c55e;
+}
+
+.custom-alert-error {
+  background: #ef4444;
+}
+
+.custom-alert-warning {
+  background: #f59e42;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateX(-50%) translateY(-20px);}
+  10% { opacity: 1; transform: translateX(-50%) translateY(0);}
+  90% { opacity: 1; }
+  100% { opacity: 0; transform: translateX(-50%) translateY(-20px);}
+}

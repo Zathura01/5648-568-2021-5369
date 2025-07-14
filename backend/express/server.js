@@ -35,6 +35,13 @@ app.use(`/${process.env.apiKeyWebapp}/transaction`, require('./routes/accounting
 //getting dashboard
 app.use(`/${process.env.apiKeyWebapp}/dashboard`, require('./routes/accounting/dashboard/GetDashboard'))
 
+
+app.use(`/${process.env.apiKeyWebapp}/logger/newVideo`, require('./routes/logger/Uploadvideo'))
+app.use(`/${process.env.apiKeyWebapp}/logger/videos`, require('./routes/logger/Aroundvideo'))
+
+
+
+
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });

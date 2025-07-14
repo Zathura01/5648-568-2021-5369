@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import { useUserContext } from '../../context/UserContext'
 import '../userspecific/Stylespecific.css'
+import LoggerScreen from '../../services/logger/screen/LoggerScreen';
+import LoggerList from '../../services/logger/list/LoggerList';
 
 
 
@@ -16,8 +18,15 @@ function Logger() {
 
     return (
         <>
-            <div className='container' style={{ padding: '20px', backgroundColor: userCtx.setting ? 'white' : 'black', color: userCtx.setting ? 'black' : 'white' }}>
-
+            <div className={`containerLogger ${userCtx.setting?'lightTheme':'darkTheme'} `}>
+                <div className='Logger'>
+                    <div className='screen'>
+                        <LoggerScreen />
+                    </div>
+                    <div className='list'>
+                        <LoggerList />
+                    </div>
+                </div>
             </div>
         </>
     )

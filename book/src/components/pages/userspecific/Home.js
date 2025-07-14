@@ -1,8 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useUserContext } from '../../context/UserContext'
+import '../userspecific/Stylespecific.css'
+
+
 
 function Home() {
+
+  const userCtx = useUserContext();
+
+  useEffect(() => {
+    console.log('Home component mounted or userCtx changed');
+  }, [userCtx.setting]);
+
+
   return (
-    <div>Home</div>
+    <>
+      <div className='container' style={{ padding: '20px', backgroundColor: userCtx.setting ? 'white' : 'black', color: userCtx.setting ? 'black' : 'white' }}>
+
+      </div>
+    </>
   )
 }
 

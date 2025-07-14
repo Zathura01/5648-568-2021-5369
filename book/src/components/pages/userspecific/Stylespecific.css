@@ -1,0 +1,93 @@
+/* Theme */
+.theme-light {
+    background-color: white;
+    color: black;
+}
+/* rgba(37, 35, 35, 0.85) */
+.theme-dark {
+    background-color: rgba(27, 4, 50, 0.77);
+    color: rgb(21, 20, 20);
+}
+
+/* Main container */
+.containerAccounting {
+    padding: 20px;
+    height: 100vh;
+    width: 100vw; /* Use full available width */
+    display: flex;
+    flex-direction: row;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+/* Left section */
+.containerAccountingleft {
+    padding: 1rem;
+    height: 100%;
+    overflow-y: auto;
+    box-sizing: border-box;
+    border: 2px solid rgb(12, 10, 13);
+}
+
+/* Right section */
+.containerAccountingright {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    height: 100%;
+    border: 2px solid black;
+}
+
+/* Top of right */
+.containerAccountingright-top {
+    flex: 3;
+    margin-bottom: 1rem;
+    border: 2px solid black;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+/* Bottom of right */
+.containerAccountingright-bottom {
+    flex: 2;
+    display: flex;
+    gap: 1rem;
+    overflow-y: auto;
+}
+
+/* Bottom left inside right */
+.containerAccountingleft-bottom {
+    background-color: #010416;
+    border-radius: 0.75rem;
+    padding: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    flex: 5;
+    overflow-y: auto;
+}
+
+/* Bottom right inside right */
+.containerAccountingright-bottom-inner {
+    background-color: #100221;
+    border-radius: 0.75rem;
+    padding: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    flex: 1;
+     border: 2px solid blueviolet;
+}
+
+/* Gutter (split drag handle) */
+.gutter {
+    background-color: transparent;
+    cursor: col-resize;
+}
+
+.lightTheme {
+  background-color: rgb(117, 114, 114);
+  color: black;
+}
+
+.darkTheme {
+  background-color: #22012c;
+  color: rgb(9, 188, 170);
+}

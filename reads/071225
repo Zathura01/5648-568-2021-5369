@@ -25,6 +25,13 @@ userid source creditto amount date cmt priority
 SAVING userid transid source creditto amount date cmt 
 
 
+//
+income goes into income table, saving table, saving dash, transaction table
+invest option goes into respinvest table, into invest dash, debited from saving table, debited from save dash, transactionn table
+expense option goes into expns table, into exp dash, debited from save dash, debited from save table, trasaction table
+withdrawal option goes into withdrawal table, debited from resp table, debited from resp dash, trasaction table
+
+
 TRANSACTION
 userid source creditto amount date cmt type
 
@@ -59,3 +66,12 @@ STEPS
 
 
 
+Alert Type	Purpose	Typical Color
+success	Operation completed successfully	Green
+danger	Error or failure	Red
+warning	Cautionary or attention needed	Yellow/Orange
+info	General informational message	Blue
+primary	Primary or key messages	Dark Blue
+secondary	Secondary messages or fallback	Grey
+light	Subtle info	Light Grey
+dark	Strong/contrasting alert	Black/Grey

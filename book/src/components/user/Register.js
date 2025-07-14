@@ -52,8 +52,8 @@ function Register() {
         if (result.success) {
             alertRegister.showAlert('Registration successful', 'success');
             userCtx.setUser({
-                userName: result.userName,
-                userId: result.userId,
+                name: result.userName,
+                id: result.userId,
                 token: result.token,
                 email: result.email,
                 otp: null
